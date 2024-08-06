@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box ;
 }
 .body{
     margin-top:60px;
@@ -10,8 +11,8 @@
 }
 a{
     font-size: 12px;
-
 }
+
 .container{
     margin: 0 10px;
 }
@@ -37,10 +38,10 @@ header{
 }
 .search input{
     border: none;
-    width: 60px;
+    width: 80px;
     background: #EBEBEB;
     border-radius: 5px;
-    padding: 2px 5px;
+    padding: 2px 30px 2px 5px;
 }
 .go-to{
     display: flex;
@@ -64,7 +65,7 @@ aside {
     top: 60px; 
     border-right: 1px solid #edebe9;
     width: 25%;
-    height: 100%; 
+    height: calc(100% - 60px); 
     background: white;
     z-index: 999; 
 }
@@ -123,16 +124,19 @@ article button{
     border-radius: 10px;
     width: 40%;
     margin: 15px;
+    transition: border-color 0.5s ease;
 }
 .design a,.develop a{
     display: none;
+    margin-top: 10px;
     color: #F45A38;
+    text-decoration: underline;
 }
 .design:hover , .develop:hover{
     border: 1px solid #F45A38;
 }
 .design:hover a, .develop:hover a{
-    display: inline;
+    display: block;
 }
 
 .new img{
@@ -178,7 +182,6 @@ article h1{
 }
 
 .new{
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
