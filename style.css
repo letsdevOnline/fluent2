@@ -130,12 +130,12 @@ article button{
     border: 1px solid #edebe9;
     border-radius: 10px;
     width: 40%;
-    margin: 15px;
+    margin: 25px;
     transition: border-color 0.5s ease;
 }
 .design a,.develop a{
     display: none;
-    margin-top: 10px;
+    margin-top: 5px;
     color: #F45A38;
     text-decoration: underline;
 }
@@ -147,7 +147,8 @@ article button{
 }
 
 .new img{
-    width: 80px;
+    width: 75px;
+    height: 75px;
     margin: 0 15px;
 }
 
